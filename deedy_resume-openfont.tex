@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (07/04/2020)
+% 
+% Author
+% Apurv Mishra(https://apurvmishra.xyz)
+% Repository
+% https://github.com/apurvmishra99/Modified-Deedy-Resume
+% Original author of Deedy Resume:
+% Debarghya Das (http://debarghyadas.com)
+% His repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+%
+
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Md Sazid}{Uddin}{ \href{mailto:sazid@nuarca.com}{\bf sazid@nuarca.com} | \bf +801733738489 | {\bf Dhaka, Bangladesh} | \urlstyle{same}\href{https://github.com/manchitro}{\bf Github} | \urlstyle{same}\href{https://www.linkedin.com/in/sazid-uddin/}{\bf Linkedin}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.66\textwidth}
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     EDUCATION
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Education}
+	\runsubsection{American International University-Bangladesh}
+	\descript{Master of Science in Computer Science}
+	\location{Januray \textbf{2023 } - Present | Dhaka, Bangladesh}
+	Specialization: \textbf{Intelligent Systems} \\
+	CGPA : \textbf{3.8 out of 4.0} (Ongoing) \\
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\descript{Bachelor of Science in Software Engineering}
+	\location{Januray \textbf{2018 } - October \textbf{2021} | Dhaka, Bangladesh}
+	CGPA : \textbf{3.84 out of 4.0}
+	\sectionsep
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     EXPERIENCE
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Experience}
+	\runsubsection{Orion Informatics Ltd.} \\
+	\descript{Junior Software Engineer}
+	\location{January \textbf{2022 } – Present | Dhaka, Bangladesh}
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\begin{tightemize}
+		\item Managing large scale web applications for Equiniti (formerly AST Financial)
+		\item Maintaining and extending front-end and back-end services using SpringBoot, Angular and MS SQL Server
+		\item Built high-performance data pipelines using Apache Kafka and Kafka Streams
+	\end{tightemize}
+	% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\descript{Intern}
+	\location{July \textbf{2021 } – December \textbf{2021} | Dhaka, Bangladesh}
+	\sectionsep
+
+	\runsubsection{American International University-Bangladesh}
+	\descript{Teaching Assistant}
+	\location{October \textbf{2020} – December \textbf{2020} | Dhaka, Bangladesh}
+	\begin{tightemize}
+		\item Advised students on various topics of Compiler Design
+		\item Help conduct and prepare materials for lectures
+	\end{tightemize}
+	\sectionsep
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     PROJECTS
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Projects}
+	\runsubsection{Attendance Scanning Wizard}
+	\descript{| Laravel, Flutter}
+	\location{Spring \textbf{2021 }}
+	\begin{tightemize}
+		\item A classroom attendance management tool that uses QR codes for students to scan using an app to submit their attendance
+	\end{tightemize}
+	\sectionsep
+
+	\runsubsection{GetFunded}
+	\descript{| Laravel, Bootstrap}
+	\location{Fall \textbf{2020 }}
+	\begin{tightemize}
+		\item A crowdfunding platform where users can create campaigns to raise funds or donate to others campaigns
+	\end{tightemize}
+	\sectionsep
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+	%     COLUMN TWO
+	%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     SKILLS
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Skills}
+	\subsection{Programming}
+	\location{\textbf{Over 5000 lines:}}
+	Python \textbullet{} Java \textbullet{} C/C++ \textbullet{} \LaTeX\ \\
+	\location{\textbf{Over 1000 lines:}}
+	Ruby \textbullet{} Haskell \textbullet{} Javascript \\
+	PostgreSQL \textbullet{} Neo4J \\
+	\location{\textbf{Familiar:}}
+	Flutter \textbullet{}
+	ReactJS \textbullet{ }MySQL \textbullet{} Shell
+	\subsection{VCS \& Build Tools}
+	Git \textbullet{} TravisCI \textbullet{}Jenkins \textbullet{} Github Actions
+	\subsection{Cloud Services}
+	\location{\textbf{Familiar:}}
+	AWS \textbullet{} GCP \textbullet{} Azure
+	\sectionsep
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     AWARDS
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Awards}
+
+	\textbf{2019 } DigiEduHack \\
+	\textbf{2019 } HackKosice \\
+	\textbf{2019 } Cyber Defence Exercise\\
+	\textbf{2018 } Local Hack Day\\
+	\textbf{2018 } Oxford Hack \\
+	\textbf{2018 } Glasgow Hack \\
+	\textbf{2017 } DPS Noida
+
+	\section{Travel \& Conference Grants}
+
+	\textbf{\$250 } ELC, Edinburgh \\
+	\textbf{\$250 } PenApps, Philadelphia \\
+	\textbf{\textsterling 150 } Algothon, London \\
+	\textbf{\texteuro 150 } CEE Hacks, Prague\\
+	\textbf{\texteuro 150 } DENEFF EE Hack, Berlin\\
+	\textbf{\texteuro 120 } HackUPC, Barcelona\\
+	\textbf{\textsterling 75  } Hack Cambridge \\
+	\textbf{\texteuro 75    } Junction, Helsinki
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     COURSEWORK
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\section{Coursework}
+	Algorithms and Data Structures \\
+	Computer Systems \\
+	Data Analysis \\
+	Machine Learning \\
+	Software Testing \\
+	Computer Simulation \\
+	Functional Programming \\
+	OOP Programming \\
+	Software Engineering \\
+	Numerical Computation \\
+	Linear Algebra \\
+	Discrete Mathematics
+
+
+	\section{Activities}
+	EU Programming Society \\
+	EU Trading and Investment Club \\
+	CompSoc \\
+
+\end{minipage}%
+\end{document}
+\documentclass[]{article}
